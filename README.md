@@ -10,18 +10,21 @@ Testirati da li postoji interesovanje za iznajmljivanje — meri se preko poslat
 - `styles.css` — dizajn
 - `script.js` — meni, forma i kontakt dugmad
 
-## Šta OBAVEZNO da izmeniš pre objave
-1. **Kontakt** u `script.js` (na vrhu, objekat `CONFIG`):
-   - `phoneIntl` — tvoj broj u formatu `3816XXXXXXXX` (bez `+` i razmaka)
-   - `email` — email na koji stižu upiti
-2. **Telefon** u `index.html` — pretraži `tel:+381000000000` i zameni pravim brojem (2 mesta: hero i footer).
-3. **Cene** u sekciji „Cene” (`index.html`) — trenutno su okvirne/placeholder.
-4. **Fotografije** — zameni sive kvadrate (`media-placeholder`) svojim slikama:
+## Stanje
+- ✅ Telefon: +381 69 1718500 (hero, footer, WhatsApp/Viber)
+- ✅ Forma šalje na: tantuzi@gmail.com
+- ✅ Cene: 200 € do 2h, 300 € do 4h, + gorivo prema udaljenosti
+- 🖼️ Fotografije: privremene brendirane SVG ilustracije u `assets/` — zameni pravim slikama
+- ⏳ Instagram: „uskoro”
+
+## Šta još da izmeniš kad budeš imao materijal
+1. **Fotografije** — zameni SVG-ove svojim slikama, npr:
    ```html
-   <img src="slike/prikolica.jpg" alt="Zicer Mobil prikolica" />
+   <img class="shot" src="assets/prikolica.jpg" alt="Zicer Mobil prikolica" />
    ```
-5. **Utisci** — zameni placeholder recenzije pravim (kad ih budeš imao).
-6. **Instagram / društvene mreže** — linkovi u footeru.
+2. **Utisci** — zameni placeholder recenzije pravim.
+3. **Instagram** — u footeru (`index.html`) zameni „uskoro” pravim linkom.
+4. **Kontakt** po potrebi u `script.js` (`CONFIG`) i `index.html`.
 
 ## Kako da vidiš sajt lokalno
 Samo otvori `index.html` dvoklikom u browseru. Ili:

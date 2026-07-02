@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Zabava i slavlje">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#141c2a"/><stop offset="1" stop-color="#0b1017"/></linearGradient>
+    <radialGradient id="glow" cx="50%" cy="20%" r="60%"><stop offset="0" stop-color="#ff6a00" stop-opacity="0.3"/><stop offset="1" stop-color="#ff6a00" stop-opacity="0"/></radialGradient>
+    <linearGradient id="ball" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff8a33"/><stop offset="1" stop-color="#e85d00"/></linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/><rect width="400" height="300" fill="url(#glow)"/>
+  <!-- confetti -->
+  <g>
+    <rect x="60" y="50" width="10" height="10" rx="2" transform="rotate(20 65 55)" fill="#25d366"/>
+    <rect x="330" y="60" width="9" height="9" rx="2" transform="rotate(-15 334 64)" fill="#7360f2"/>
+    <circle cx="110" cy="70" r="4" fill="#ffd166"/>
+    <circle cx="300" cy="90" r="4" fill="#ff6a00"/>
+    <rect x="200" y="46" width="8" height="8" rx="2" fill="#ffd166"/>
+  </g>
+  <!-- people silhouettes with arms up -->
+  <g fill="#26303f" stroke="#3a4756" stroke-width="2">
+    <g><circle cx="120" cy="150" r="20"/><path d="M120 170 V235 M120 185 L96 150 M120 185 L144 150"/></g>
+    <g><circle cx="200" cy="135" r="22"/><path d="M200 157 V240 M200 175 L172 138 M200 175 L228 138"/></g>
+    <g><circle cx="280" cy="150" r="20"/><path d="M280 170 V235 M280 185 L256 150 M280 185 L304 150"/></g>
+  </g>
+  <!-- ball above middle -->
+  <circle cx="200" cy="96" r="20" fill="url(#ball)"/>
+  <path d="M200 76 V116 M180 96 H220 M186 80 C198 92 198 100 186 112 M214 80 C202 92 202 100 214 112" stroke="#7a2e00" stroke-width="2" fill="none" opacity="0.7"/>
+  <ellipse cx="200" cy="250" rx="150" ry="14" fill="#000" opacity="0.3"/>
+</svg>

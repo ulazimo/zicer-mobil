@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Koš — pogodak">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#141c2a"/><stop offset="1" stop-color="#0b1017"/></linearGradient>
+    <radialGradient id="glow" cx="70%" cy="20%" r="60%"><stop offset="0" stop-color="#ff6a00" stop-opacity="0.3"/><stop offset="1" stop-color="#ff6a00" stop-opacity="0"/></radialGradient>
+    <linearGradient id="ball" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff8a33"/><stop offset="1" stop-color="#e85d00"/></linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/><rect width="400" height="300" fill="url(#glow)"/>
+  <!-- backboard -->
+  <rect x="120" y="60" width="160" height="104" rx="8" fill="#26303f" stroke="#3a4756" stroke-width="3"/>
+  <rect x="176" y="96" width="48" height="36" rx="4" fill="none" stroke="#ff6a00" stroke-width="4"/>
+  <!-- rim + net -->
+  <rect x="170" y="156" width="60" height="8" rx="4" fill="#ff6a00"/>
+  <path d="M174 164 L182 210 M188 164 L192 210 M200 164 L200 210 M212 164 L208 210 M226 164 L218 210
+           M177 178 H223 M182 194 H218" stroke="#eef1f5" stroke-width="1.8" fill="none" opacity="0.85"/>
+  <!-- ball -->
+  <circle cx="200" cy="120" r="26" fill="url(#ball)"/>
+  <path d="M200 94 V146 M174 120 H226 M181 100 C194 114 194 126 181 140 M219 100 C206 114 206 126 219 140" stroke="#7a2e00" stroke-width="2.2" fill="none" opacity="0.7"/>
+</svg>

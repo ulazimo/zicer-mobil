@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Dostava prikolice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#141c2a"/><stop offset="1" stop-color="#0b1017"/></linearGradient>
+    <radialGradient id="glow" cx="70%" cy="20%" r="60%"><stop offset="0" stop-color="#ff6a00" stop-opacity="0.3"/><stop offset="1" stop-color="#ff6a00" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/><rect width="400" height="300" fill="url(#glow)"/>
+  <ellipse cx="200" cy="240" rx="170" ry="16" fill="#000" opacity="0.35"/>
+  <!-- van -->
+  <path d="M40 150 H150 V210 H40 Z" fill="#ff6a00"/>
+  <path d="M150 168 H196 L212 200 V210 H150 Z" fill="#e85d00"/>
+  <rect x="156" y="172" width="34" height="22" rx="3" fill="#0b1017" opacity="0.7"/>
+  <text x="95" y="188" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#0b1017" font-weight="800" letter-spacing="1">ZICER</text>
+  <!-- trailer -->
+  <rect x="238" y="150" width="130" height="60" rx="8" fill="#26303f" stroke="#3a4756" stroke-width="3"/>
+  <rect x="300" y="120" width="46" height="34" rx="4" fill="#1c2431" stroke="#33404f" stroke-width="2"/>
+  <rect x="314" y="130" width="20" height="15" rx="2" fill="none" stroke="#ff6a00" stroke-width="3"/>
+  <path d="M212 205 H240" stroke="#3a4756" stroke-width="5" stroke-linecap="round"/>
+  <!-- wheels -->
+  <circle cx="90" cy="212" r="20" fill="#0b1017" stroke="#3a4756" stroke-width="3"/><circle cx="90" cy="212" r="7" fill="#ff6a00"/>
+  <circle cx="270" cy="212" r="20" fill="#0b1017" stroke="#3a4756" stroke-width="3"/><circle cx="270" cy="212" r="7" fill="#ff6a00"/>
+  <circle cx="338" cy="212" r="20" fill="#0b1017" stroke="#3a4756" stroke-width="3"/><circle cx="338" cy="212" r="7" fill="#ff6a00"/>
+  <!-- motion lines -->
+  <g stroke="#8b95a3" stroke-width="3" stroke-linecap="round" opacity="0.6"><path d="M20 165 H8"/><path d="M28 185 H10"/><path d="M22 205 H14"/></g>
+</svg>

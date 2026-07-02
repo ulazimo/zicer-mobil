@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Arkadni aparat">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#141c2a"/><stop offset="1" stop-color="#0b1017"/></linearGradient>
+    <radialGradient id="glow" cx="30%" cy="20%" r="60%"><stop offset="0" stop-color="#ff6a00" stop-opacity="0.3"/><stop offset="1" stop-color="#ff6a00" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/><rect width="400" height="300" fill="url(#glow)"/>
+  <!-- two cabinets -->
+  <g>
+    <rect x="70" y="70" width="110" height="70" rx="8" fill="#26303f" stroke="#3a4756" stroke-width="3"/>
+    <rect x="105" y="92" width="40" height="30" rx="3" fill="none" stroke="#ff6a00" stroke-width="4"/>
+    <rect x="98" y="136" width="54" height="6" rx="3" fill="#ff6a00"/>
+    <rect x="80" y="140" width="90" height="120" rx="10" fill="#1c2431" stroke="#33404f" stroke-width="3"/>
+    <rect x="94" y="156" width="62" height="30" rx="4" fill="#0b1017"/>
+    <text x="125" y="178" text-anchor="middle" font-family="monospace" font-size="18" fill="#ff6a00" font-weight="700">14</text>
+  </g>
+  <g>
+    <rect x="220" y="70" width="110" height="70" rx="8" fill="#26303f" stroke="#3a4756" stroke-width="3"/>
+    <rect x="255" y="92" width="40" height="30" rx="3" fill="none" stroke="#ff6a00" stroke-width="4"/>
+    <rect x="248" y="136" width="54" height="6" rx="3" fill="#ff6a00"/>
+    <rect x="230" y="140" width="90" height="120" rx="10" fill="#1c2431" stroke="#33404f" stroke-width="3"/>
+    <rect x="244" y="156" width="62" height="30" rx="4" fill="#0b1017"/>
+    <text x="275" y="178" text-anchor="middle" font-family="monospace" font-size="18" fill="#ff6a00" font-weight="700">21</text>
+  </g>
+</svg>

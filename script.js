@@ -3,10 +3,9 @@
 // --- KONFIGURACIJA: zameni ove vrednosti svojima ---
 const CONFIG = {
   // Broj telefona u međunarodnom formatu bez + i bez razmaka (za WhatsApp/Viber)
-  // Primer za Srbiju: 3816XXXXXXXX
-  phoneIntl: "3810000000000",
+  phoneIntl: "381691718500",
   // Email na koji stiže upit iz forme
-  email: "info@zicermobil.rs",
+  email: "tantuzi@gmail.com",
 };
 // ---------------------------------------------------
 

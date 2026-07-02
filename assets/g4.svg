@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Trofej i konfete">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#141c2a"/><stop offset="1" stop-color="#0b1017"/></linearGradient>
+    <radialGradient id="glow" cx="50%" cy="25%" r="60%"><stop offset="0" stop-color="#ff6a00" stop-opacity="0.3"/><stop offset="1" stop-color="#ff6a00" stop-opacity="0"/></radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffd166"/><stop offset="1" stop-color="#e8a600"/></linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/><rect width="400" height="300" fill="url(#glow)"/>
+  <!-- confetti -->
+  <g>
+    <rect x="80" y="60" width="10" height="10" rx="2" transform="rotate(20 85 65)" fill="#25d366"/>
+    <rect x="320" y="70" width="9" height="9" rx="2" transform="rotate(-15 324 74)" fill="#7360f2"/>
+    <circle cx="120" cy="100" r="4" fill="#ffd166"/>
+    <circle cx="300" cy="120" r="4" fill="#ff6a00"/>
+    <rect x="70" y="150" width="8" height="8" rx="2" fill="#ff6a00"/>
+    <rect x="330" y="150" width="8" height="8" rx="2" fill="#ffd166"/>
+  </g>
+  <!-- trophy -->
+  <path d="M150 90 H250 V120 C250 160 220 175 200 175 C180 175 150 160 150 120 Z" fill="url(#gold)"/>
+  <path d="M150 96 C120 96 120 140 152 142" fill="none" stroke="url(#gold)" stroke-width="9"/>
+  <path d="M250 96 C280 96 280 140 248 142" fill="none" stroke="url(#gold)" stroke-width="9"/>
+  <rect x="190" y="175" width="20" height="26" fill="#e8a600"/>
+  <rect x="164" y="201" width="72" height="16" rx="4" fill="#c88f00"/>
+  <rect x="150" y="217" width="100" height="14" rx="4" fill="#26303f" stroke="#3a4756" stroke-width="2"/>
+  <text x="200" y="132" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="800" fill="#7a2e00">1</text>
+</svg>

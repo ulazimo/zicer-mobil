@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Semafor sa rezultatom">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#141c2a"/><stop offset="1" stop-color="#0b1017"/></linearGradient>
+    <radialGradient id="glow" cx="50%" cy="30%" r="60%"><stop offset="0" stop-color="#ff6a00" stop-opacity="0.28"/><stop offset="1" stop-color="#ff6a00" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/><rect width="400" height="300" fill="url(#glow)"/>
+  <rect x="70" y="80" width="260" height="140" rx="14" fill="#1c2431" stroke="#33404f" stroke-width="3"/>
+  <rect x="92" y="104" width="216" height="70" rx="8" fill="#0b1017"/>
+  <text x="200" y="156" text-anchor="middle" font-family="monospace" font-size="46" fill="#ff6a00" font-weight="700" letter-spacing="4">21:18</text>
+  <text x="200" y="198" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#8b95a3" letter-spacing="4" font-weight="700">SWISH!</text>
+  <circle cx="110" cy="196" r="5" fill="#25d366"/>
+  <circle cx="290" cy="196" r="5" fill="#ffd166"/>
+</svg>

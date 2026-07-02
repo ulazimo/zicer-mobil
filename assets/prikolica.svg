@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Zicer Mobil prikolica sa arkadnim košom">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#141c2a"/>
+      <stop offset="1" stop-color="#0b1017"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="78%" cy="14%" r="55%">
+      <stop offset="0" stop-color="#ff6a00" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#ff6a00" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ball" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff8a33"/>
+      <stop offset="1" stop-color="#e85d00"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="480" fill="url(#bg)"/>
+  <rect width="640" height="480" fill="url(#glow)"/>
+
+  <!-- confetti -->
+  <g fill="#ff8a33" opacity="0.9">
+    <rect x="90" y="60" width="10" height="10" rx="2" transform="rotate(20 95 65)"/>
+    <rect x="520" y="90" width="9" height="9" rx="2" transform="rotate(-15 524 94)" fill="#ffd166"/>
+    <circle cx="150" cy="120" r="4" fill="#25d366"/>
+    <rect x="470" y="150" width="8" height="8" rx="2" fill="#7360f2"/>
+    <circle cx="560" cy="200" r="4" fill="#ffd166"/>
+  </g>
+
+  <!-- ground shadow -->
+  <ellipse cx="330" cy="420" rx="250" ry="26" fill="#000" opacity="0.35"/>
+
+  <!-- arcade cabinet -->
+  <g>
+    <!-- backboard -->
+    <rect x="228" y="70" width="184" height="120" rx="10" fill="#26303f" stroke="#3a4756" stroke-width="3"/>
+    <rect x="248" y="90" width="144" height="80" rx="6" fill="#141c2a"/>
+    <rect x="300" y="150" width="40" height="30" rx="3" fill="none" stroke="#ff6a00" stroke-width="4"/>
+    <!-- rim -->
+    <rect x="296" y="182" width="48" height="7" rx="3" fill="#ff6a00"/>
+    <!-- net -->
+    <path d="M300 189 L304 214 M312 189 L314 214 M320 189 L320 214 M328 189 L326 214 M340 189 L336 214
+             M300 189 H340 M303 200 H337 M306 210 H334" stroke="#eef1f5" stroke-width="1.6" fill="none" opacity="0.85"/>
+
+    <!-- cabinet body -->
+    <rect x="250" y="188" width="140" height="150" rx="12" fill="#1c2431" stroke="#33404f" stroke-width="3"/>
+    <rect x="266" y="206" width="108" height="46" rx="6" fill="#0b1017"/>
+    <!-- scoreboard digits -->
+    <text x="320" y="238" text-anchor="middle" font-family="Consolas, monospace" font-size="26" fill="#ff6a00" font-weight="700">21</text>
+    <!-- ramp -->
+    <path d="M250 300 L200 360 H440 L390 300 Z" fill="#26303f" stroke="#33404f" stroke-width="3"/>
+    <!-- ZICER MOBIL label -->
+    <text x="320" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#8b95a3" letter-spacing="2" font-weight="700">ZICER MOBIL</text>
+  </g>
+
+  <!-- trailer bed -->
+  <rect x="150" y="360" width="360" height="26" rx="8" fill="#26303f" stroke="#3a4756" stroke-width="3"/>
+  <!-- hitch -->
+  <path d="M510 373 H560" stroke="#3a4756" stroke-width="6" stroke-linecap="round"/>
+  <!-- wheels -->
+  <g>
+    <circle cx="230" cy="392" r="26" fill="#0b1017" stroke="#3a4756" stroke-width="4"/>
+    <circle cx="230" cy="392" r="9" fill="#ff6a00"/>
+    <circle cx="430" cy="392" r="26" fill="#0b1017" stroke="#3a4756" stroke-width="4"/>
+    <circle cx="430" cy="392" r="9" fill="#ff6a00"/>
+  </g>
+
+  <!-- flying basketball -->
+  <g>
+    <circle cx="452" cy="118" r="30" fill="url(#ball)"/>
+    <path d="M452 88 V148 M422 118 H482 M430 96 C445 112 445 124 430 140 M474 96 C459 112 459 124 474 140"
+          stroke="#7a2e00" stroke-width="2.4" fill="none" opacity="0.7"/>
+  </g>
+</svg>
