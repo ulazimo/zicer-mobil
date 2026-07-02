@@ -330,7 +330,11 @@
           <textarea name="poruka" rows="3" placeholder="Broj gostiju, trajanje, posebne želje..."></textarea>
         </label>
 
-        <button type="submit" class="btn btn-lg btn-block">Pošalji upit</button>
+        <!-- honeypot protiv spama (sakriven od korisnika) -->
+        <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" />
+
+        <button type="submit" id="submitBtn" class="btn btn-lg btn-block">Pošalji upit</button>
+        <p id="formStatus" class="form-status" role="status"></p>
 
         <p class="form-alt">Ili nas kontaktiraj direktno:</p>
         <div class="contact-buttons">

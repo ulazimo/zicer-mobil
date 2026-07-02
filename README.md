@@ -26,6 +26,17 @@ Testirati da li postoji interesovanje za iznajmljivanje — meri se preko poslat
 3. **Instagram** — u footeru (`index.html`) zameni „uskoro” pravim linkom.
 4. **Kontakt** po potrebi u `script.js` (`CONFIG`) i `index.html`.
 
+## Forma za rezervaciju — direktno slanje mejla (Web3Forms)
+Forma je povezana sa besplatnim servisom Web3Forms. Da bi upiti stizali **direktno na mejl** (bez otvaranja mejl klijenta):
+1. Idi na https://web3forms.com i unesi `tantuzi@gmail.com` — dobićeš **Access Key** na mejl.
+2. Otvori `script.js` i u objektu `CONFIG` postavi:
+   ```js
+   web3formsKey: "TVOJ-ACCESS-KEY",
+   ```
+3. `git add -A && git commit -m "web3forms kljuc" && git push`
+
+Dok je `web3formsKey` prazno (`""`), forma privremeno otvara mejl klijent — tako nikad nije pokvarena. WhatsApp/Viber/poziv rade nezavisno.
+
 ## Kako da vidiš sajt lokalno
 Samo otvori `index.html` dvoklikom u browseru. Ili:
 ```bash

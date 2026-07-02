@@ -4,8 +4,12 @@
 const CONFIG = {
   // Broj telefona u međunarodnom formatu bez + i bez razmaka (za WhatsApp/Viber)
   phoneIntl: "381691718500",
-  // Email na koji stiže upit iz forme
+  // Email na koji stiže upit iz forme (fallback ako Web3Forms ključ nije postavljen)
   email: "tantuzi@gmail.com",
+  // Web3Forms access key — besplatno na https://web3forms.com (unesi tantuzi@gmail.com).
+  // Kad ubaciš ključ ovde, forma šalje mejl DIREKTNO, bez otvaranja mejl klijenta.
+  // Ostavi prazno ("") da forma privremeno koristi mejl klijent.
+  web3formsKey: "",
 };
 // ---------------------------------------------------
 
@@ -37,14 +41,76 @@ function buildMessage() {
   return lines.join("\n");
 }
 
-// Slanje forme -> otvara email klijent sa popunjenom porukom
+// Slanje forme
 const form = document.getElementById("bookingForm");
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  if (!form.reportValidity()) return;
+const statusEl = document.getElementById("formStatus");
+const submitBtn = document.getElementById("submitBtn");
+
+function setStatus(msg, type) {
+  if (!statusEl) return;
+  statusEl.textContent = msg;
+  statusEl.className = "form-status" + (type ? " " + type : "");
+}
+
+// Fallback: otvori mejl klijent sa popunjenom porukom
+function sendViaMailto() {
   const subject = encodeURIComponent("Rezervacija — Zicer Mobil");
   const body = encodeURIComponent(buildMessage());
   window.location.href = `mailto:${CONFIG.email}?subject=${subject}&body=${body}`;
+}
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  if (!form.reportValidity()) return;
+
+  // Honeypot: ako je "botcheck" popunjen, to je bot — tiho odustani
+  if (form.elements["botcheck"] && form.elements["botcheck"].checked) return;
+
+  // Ako Web3Forms ključ nije postavljen, koristi mejl klijent
+  if (!CONFIG.web3formsKey) {
+    sendViaMailto();
+    return;
+  }
+
+  const val = (name) => (form.elements[name] ? form.elements[name].value.trim() : "");
+  const payload = {
+    access_key: CONFIG.web3formsKey,
+    subject: "Nova rezervacija — Zicer Mobil",
+    from_name: "Zicer Mobil sajt",
+    Ime: val("ime"),
+    Telefon: val("telefon"),
+    Datum: val("datum"),
+    "Tip događaja": val("tip"),
+    Lokacija: val("lokacija"),
+    Poruka: val("poruka"),
+  };
+
+  submitBtn.disabled = true;
+  const originalLabel = submitBtn.textContent;
+  submitBtn.textContent = "Šaljem...";
+  setStatus("", "");
+
+  try {
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Accept: "application/json" },
+      body: JSON.stringify(payload),
+    });
+    const data = await res.json();
+    if (data.success) {
+      form.reset();
+      setStatus("✅ Hvala! Upit je poslat — javljamo se uskoro.", "ok");
+    } else {
+      throw new Error(data.message || "greška");
+    }
+  } catch (err) {
+    // Ako slanje ne uspe, ponudi mejl klijent kao rezervu
+    setStatus("Slanje nije uspelo. Otvaram mejl kao rezervu...", "err");
+    sendViaMailto();
+  } finally {
+    submitBtn.disabled = false;
+    submitBtn.textContent = originalLabel;
+  }
 });
 
 // WhatsApp / Viber dugmad -> prosleđuju popunjenu poruku
