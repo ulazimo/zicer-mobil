@@ -9,7 +9,7 @@ const CONFIG = {
   // Web3Forms access key — besplatno na https://web3forms.com (unesi tantuzi@gmail.com).
   // Kad ubaciš ključ ovde, forma šalje mejl DIREKTNO, bez otvaranja mejl klijenta.
   // Ostavi prazno ("") da forma privremeno koristi mejl klijent.
-  web3formsKey: "",
+  web3formsKey: "05d5f677-0506-4c7a-b8fc-c0d03fa9251b",
 };
 // ---------------------------------------------------
 
