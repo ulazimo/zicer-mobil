@@ -119,7 +119,7 @@ function updateContactLinks() {
   const wa = document.getElementById("waBtn");
   const viber = document.getElementById("viberBtn");
   if (wa) wa.href = `https://wa.me/${CONFIG.phoneIntl}?text=${text}`;
-  if (viber) viber.href = `viber://chat?number=%2B${CONFIG.phoneIntl}`;
+  if (viber) viber.href = `viber://chat/?number=%2B${CONFIG.phoneIntl}`;
 }
 // Ažuriraj linkove pri svakom kliku na dugmad (da uhvati unete podatke)
 ["waBtn", "viberBtn"].forEach((id) => {
@@ -127,3 +127,16 @@ function updateContactLinks() {
   if (el) el.addEventListener("click", updateContactLinks);
 });
 updateContactLinks();
+
+// Viber nema web fallback kao WhatsApp — ako se aplikacija ne otvori, prikaži uputstvo
+const viberBtn = document.getElementById("viberBtn");
+if (viberBtn) {
+  viberBtn.addEventListener("click", () => {
+    setTimeout(() => {
+      if (!document.hidden) {
+        const hint = document.getElementById("viberHint");
+        if (hint) hint.hidden = false;
+      }
+    }, 1500);
+  });
+}
