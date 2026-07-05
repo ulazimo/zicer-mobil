@@ -175,12 +175,6 @@ img { max-width: 100%; display: block; }
   box-shadow: 0 14px 34px rgba(13, 17, 23, 0.22);
 }
 
-.faq-art { display: flex; justify-content: center; margin-top: 36px; }
-.faq-art img {
-  width: 100%; max-width: 520px;
-  border-radius: var(--radius); border: 1px solid var(--line); box-shadow: var(--shadow);
-}
-
 /* ===== Check list ===== */
 .check-list { list-style: none; display: grid; gap: 10px; margin: 0 0 8px; }
 .check-list li { position: relative; padding-left: 30px; color: #3f4650; }
