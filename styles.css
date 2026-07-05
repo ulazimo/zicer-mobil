@@ -269,6 +269,19 @@ img { max-width: 100%; display: block; }
   font-family: inherit; font-size: 0.98rem;
 }
 .form input:focus, .form select:focus, .form textarea:focus { outline: none; border-color: var(--orange); }
+.form input[type="date"] {
+  -webkit-appearance: none;
+  appearance: none;
+  display: flex;
+  align-items: center;
+  height: 45px;
+  padding-top: 0;
+  padding-bottom: 0;
+  color-scheme: dark;
+  text-align: left;
+}
+.form input[type="date"]::-webkit-date-and-time-value { text-align: left; }
+.form select { height: 45px; padding-top: 0; padding-bottom: 0; }
 .hp { position: absolute; left: -9999px; opacity: 0; height: 0; width: 0; }
 .form-status { text-align: center; margin-top: 14px; font-size: 0.95rem; font-weight: 600; min-height: 1.2em; }
 .form-status.ok { color: #25d366; }
