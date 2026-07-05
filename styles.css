@@ -175,8 +175,8 @@ img { max-width: 100%; display: block; }
   box-shadow: 0 14px 34px rgba(13, 17, 23, 0.22);
 }
 
-.steps-art { display: flex; justify-content: center; margin-top: 36px; }
-.steps-art img {
+.faq-art { display: flex; justify-content: center; margin-top: 36px; }
+.faq-art img {
   width: 100%; max-width: 520px;
   border-radius: var(--radius); border: 1px solid var(--line); box-shadow: var(--shadow);
 }
